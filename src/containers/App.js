@@ -18,7 +18,7 @@ class App extends Component {
     this.state = {
       users: [],
     }
-    
+
     fetch('https://randomuser.me/api/?results=20')
       .then(res => res.json())
       .then(users => this.setState({users: users.results}))
